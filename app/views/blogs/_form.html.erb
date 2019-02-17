@@ -1,0 +1,13 @@
+
+
+<h1>This is our Form</h1>
+
+<%= form_with model: @blog, local: true do |b| %>
+
+<%= b.text_field :title, class: 'form-control', placeholder: 'Title'%>
+<br>
+<br>
+
+<%= b.text_area  :content, class: 'form-control', placeholder: 'container' %>
+<%= b.submit %>
+<% end %>
